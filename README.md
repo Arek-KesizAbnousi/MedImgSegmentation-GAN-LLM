@@ -21,7 +21,7 @@ This project focuses on developing an enhanced medical image segmentation system
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
-- [Contact Information](#contact-information)
+
 
 ## Project Overview
 
@@ -80,7 +80,7 @@ MedSegGAN-LLM/
    git clone https://github.com/Arek-KesizAbnousi/MedImgSegmentation-GAN-LLM.git
    cd MedImgSegmentation-GAN-LLM
 
-2. ** Create a Virtual Environment**
+2. **Create a Virtual Environment**
 
 Using Anaconda:
 ```bash
@@ -103,12 +103,38 @@ python -c "import torch; print(torch.cuda.is_available())"
 ```
 The output should be True.
 
-## 1. Data Preprocessing
+## Dataset Preparation
 1. Download the ISIC Skin Cancer Dataset
-Register on the ISIC Archive.
+   - Register on the ISIC Archive.
+   - Download the dataset, including images and corresponding segmentation masks.
 
-Download the dataset, including images and corresponding segmentation masks.
+2. Data Preprocessing
+   -Run the data preprocessing script to prepare the datasets.
+   ```
+   python src/data_preprocessing.py
+   ```
+   -Functionality:
 
-Organize the dataset:
+     -Loads images and masks.
+     -Resizes and normalizes images.
+     -Splits data into training and validation sets.
+
+## Usage
+   ### 1. Data Preprocessing
+   
+   ### 2. GAN Training
+   
+   ### 3. U-Net Training
+   
+   ### 4. LLM Integration
+   
+   ### 5. Running the Full Pipeline
+   
+## Results
 
 
+## Visualization
+## Contributing
+## License
+
+## Acknowledgments
