@@ -103,7 +103,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 ```
 The output should be True.
 
-## Dataset Preparation
+## 1. Data Preprocessing
 1. Download the ISIC Skin Cancer Dataset
 Register on the ISIC Archive.
 
