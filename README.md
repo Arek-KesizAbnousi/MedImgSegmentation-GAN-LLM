@@ -82,26 +82,26 @@ MedSegGAN-LLM/
 
 2. **Create a Virtual Environment**
 
-Using Anaconda:
-```bash
-conda create -n medseg_env python=3.8
-conda activate medseg_env
-```
-Or using virtualenv:
-```
-python3 -m venv medseg_env
-source medseg_env/bin/activate
-```
+   Using Anaconda:
+   ```
+   conda create -n medseg_env python=3.8
+   conda activate medseg_env
+   ```
+   Or using virtualenv:
+   ```
+   python3 -m venv medseg_env
+   source medseg_env/bin/activate
+   ```
 3. **Install Required Packages**
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 4. **Verify CUDA Installation**
-   Ensure that PyTorch detects the GPU:
-```
-python -c "import torch; print(torch.cuda.is_available())"
-```
-The output should be True.
+    Ensure that PyTorch detects the GPU:
+   ```
+   python -c "import torch; print(torch.cuda.is_available())"
+   ```
+   The output should be True.
 
 ## Dataset Preparation
 1. Download the ISIC Skin Cancer Dataset
