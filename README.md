@@ -109,26 +109,70 @@ The output should be True.
    - Download the dataset, including images and corresponding segmentation masks.
 
 2. Data Preprocessing
-   -Run the data preprocessing script to prepare the datasets.
+   - Run the data preprocessing script to prepare the datasets.
    ```
    python src/data_preprocessing.py
    ```
-   -Functionality:
-
-     -Loads images and masks.
-     -Resizes and normalizes images.
-     -Splits data into training and validation sets.
-
+   - Functionality:
+     - Loads images and masks.
+     - Resizes and normalizes images.
+     - Splits data into training and validation sets.
+ 
 ## Usage
    ### 1. Data Preprocessing
-   
+   **Script:** `src/data_preprocessing.py`
+
+ **Purpose:** Load and preprocess the dataset, and split it into training and validation sets.
+
+**Run:**
+```
+python src/data_preprocessing.py
+```
+
    ### 2. GAN Training
-   
+   **Script:** `src/gan_training.py `
+   **Purpose:** Train the GAN to generate synthetic images for data augmentation.
+   **Run:**
+   ```
+    python src/gan_training.py
+
+   ```
+**Output:**
+ - Trained GAN models saved in `models/`
+ - Generated images saved in   `results/generated_images/` 
    ### 3. U-Net Training
+   **Script:** `src/gan_training.py `
+   **Purpose:** Train the U-Net model for image segmentation using the augmented dataset.
+   **Run:**
+   ```
+    python src/unet_training.py
+
+   ```
+**Output:**
+ - Trained U-Net model saved in `models/`
+ - Segmentation outputs saved in   `results/segmentation_outputs/`
    
    ### 4. LLM Integration
-   
+   **Script:** `src/llm_integration.py`
+   **Purpose:** Generate descriptive reports based on the segmentation results using GPT-2.
+   **Run:**
+   ```
+    python src/llm_integration.py
+
+   ```
+**Output:**
+ - Generated reports saved in  `results/reports/`
+
    ### 5. Running the Full Pipeline
+      **Script:** `src/main.py`
+   **Purpose:** Execute the entire process from data preprocessing to report generation.
+   **Run:**
+   ```
+    python src/main.py
+
+   ```
+**Output:**
+ - Generated reports saved in  `results/reports/`
    
 ## Results
 
