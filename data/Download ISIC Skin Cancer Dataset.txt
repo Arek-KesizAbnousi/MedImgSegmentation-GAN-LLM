@@ -1,0 +1,3 @@
+Register and download the dataset from the ISIC Archive.
+Download both the images and their corresponding segmentation masks.
+Place the images in /data/images/ and masks in /data/masks/
