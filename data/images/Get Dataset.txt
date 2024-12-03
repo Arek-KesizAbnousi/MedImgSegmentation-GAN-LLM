@@ -1,0 +1,9 @@
+ Download the ISIC Skin Cancer Dataset
+Register on the ISIC Archive.
+
+Download the dataset, including images and corresponding segmentation masks.
+
+Organize the dataset:
+
+kotlin
+Copy code
