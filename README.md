@@ -18,7 +18,6 @@ This project focuses on developing an enhanced medical image segmentation system
   - [5. Running the Full Pipeline](#5-running-the-full-pipeline)
 - [Results](#results)
 - [Visualization](#visualization)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -202,7 +201,6 @@ MedSegGAN-LLM/
       from utils import display_mask
       display_mask(mask_tensor)
      ```
-## License
 
 ## Acknowledgments
    - **ISIC Archive:**  For providing the skin cancer dataset.
