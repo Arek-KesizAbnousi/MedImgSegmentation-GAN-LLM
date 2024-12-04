@@ -1,0 +1,6 @@
+Additional Notes
+Data Directories: Ensure that the data directories (data/images, data/masks, etc.) contain the necessary data before running the scripts.
+Model Directories: The scripts will save models to the models/ directory. Make sure this directory exists or is created during execution.
+Results Directories: The scripts will output results to the results/ directory. Ensure that subdirectories like generated_images, segmentation_outputs, and reports exist or are created.
+CUDA Device: The scripts default to using 'cuda' for GPU acceleration. Ensure that your system has a compatible NVIDIA GPU and CUDA installed. If not, you can change device='cuda' to device='cpu' in the scripts.
+LLM Integration: The llm_integration.py script uses a pre-trained GPT-2 model from Hugging Face Transformers. Ensure that you have an internet connection during the first run to download the model.
