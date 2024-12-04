@@ -1,7 +1,18 @@
-torch==1.9.0
-torchvision==0.10.0
-transformers==4.8.2
-numpy==1.21.0
-matplotlib==3.4.2
-scikit-learn==0.24.2
-Pillow==8.2.0
+# requirements.txt
+
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+pillow
+opencv-python
+torch
+torchvision
+torchaudio
+tensorflow
+keras
+tqdm
+jupyter
+notebook
+transformers
